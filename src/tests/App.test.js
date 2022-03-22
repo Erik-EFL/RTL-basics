@@ -7,7 +7,7 @@ import App from '../App';
 describe(` Teste se o topo da aplicação contém um conjunto fixo de links de 
 navegação.`, () => {
   it(`Testa se os links do componente app contem os textos:
-  Home, About e Favorite Pokémons`, () => {
+   Home, About e Favorite Pokémons`, () => {
     renderWithRouter(<App />);
     const homeText = screen.getByText(/Home/i);
     const aboutText = screen.getByText(/About/i);

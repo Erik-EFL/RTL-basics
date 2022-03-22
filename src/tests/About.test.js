@@ -1,1 +1,3 @@
-test('oi', () => {});
+// import renderWithRouter from './helpers/renderWithRouter';
+
+test('', () => {});

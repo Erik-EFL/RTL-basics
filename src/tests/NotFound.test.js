@@ -8,9 +8,8 @@ describe('Teste o componente <FavoritePokemons.js />', () => {
   Page requested not found 😭`, () => {
     renderWithRouter(<NotFound />);
 
-    const haveTheText = screen.getByRole('heading', { level: 2 },
-      'Page requested not found 😭');
-    expect(haveTheText).toBeInTheDocument();
+    const haveTheText = screen.getByRole('heading', { level: 2 });
+    expect(haveTheText).toHaveTextContent('Page requested not found 😭');
   });
 
   it(`Teste se página mostra a imagem 
